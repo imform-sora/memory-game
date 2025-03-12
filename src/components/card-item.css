@@ -1,0 +1,27 @@
+.card-container {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.card-box {
+  cursor: pointer;
+}
+
+.card-box .front,
+.card-box .back {
+  width: 180px;
+  height: 180px;
+}
+.card-box.is-active .front {
+  transform: rotateY(0);
+}
+.card-box .front {
+  position: absolute;
+  transform: rotateY(90deg);
+}
+.card-box .back {
+  display: inline-block;
+  background-color: #aaa;
+}
